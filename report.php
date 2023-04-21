@@ -136,9 +136,8 @@ class quiz_mcq_report extends quiz_default_report {
         for ($q = 0; $q < count($allrealquestionids); $q++) {
 
             $question = $DB->get_record_sql('
-                SELECT q.*, qc.contextid
+                SELECT q.*
                 FROM {question} q
-                JOIN {question_categories} qc ON qc.id = q.category
                 WHERE q.id = ?', array($allrealquestionids[$q]));
 
             // Is this a single-answer question?

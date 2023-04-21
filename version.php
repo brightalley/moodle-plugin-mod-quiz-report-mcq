@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version  = 2014120801;
+$plugin->version  = 2023042101;
 $plugin->requires = 2013111802;
-$plugin->release  = "2.2 (for Moodle 2.7+)";
+$plugin->release  = "2.3 (for Moodle 2.7+)";
 $plugin->maturity  = MATURITY_BETA;
 $plugin->component = 'quiz_mcq';
